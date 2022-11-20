@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>NET7</TargetFramework>
+	<Nullable>enable</Nullable>
+	<LangVersion>preview</LangVersion>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>IGT.GeometricAlgebra</Title>
+	<Authors>Chaplin Marchais (chap.m.gigga@gmail.com)</Authors>
+	<Company>Impetus Global Technology</Company>
+	<Description>Allows for Clifford Algebras to be specified, supporting up to 32 spatial dimensions. Two options for interacting with the execution engine are available, the object model defined in IGT.GeometricAlgebra.Primitives or simply call the ExecutionEngine.Execute() method and pass in a string with the desired operations defined.</Description>
+	<Copyright>Impetus Global Technology 2022-2032</Copyright>
+	<PackageIcon>logo.png</PackageIcon>
+	<RepositoryType>git</RepositoryType>
+	<NeutralLanguage>en</NeutralLanguage>
+	<PackageLicenseExpression>mit</PackageLicenseExpression>
+	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<IncludeSymbols>True</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	<AnalysisLevel>latest-recommended</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Include="..\..\..\..\Users\chapm\OneDrive - Impetus Global Technology\Development\FluidConnect\Media\Iconography\logo.png">
+	  <Pack>True</Pack>
+	  <PackagePath>\</PackagePath>
+	</None>
+	<None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
